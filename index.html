@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YES ACADEMY – English Language &amp; Study Abroad Consultancy | Sylhet</title>
+<meta name="description" content="YES ACADEMY – Premier English Language Proficiency Training Center and Study Abroad Consultancy in Sylhet, Bangladesh. IELTS, PTE, Grammar courses. 95% success rate.">
+<meta name="keywords" content="YES ACADEMY, IELTS Sylhet, PTE Sylhet, Study Abroad Bangladesh, English Language Course, IELTS Training, PTE Coaching">
+<meta name="author" content="YES ACADEMY">
+<meta property="og:title" content="YES ACADEMY – English Language &amp; Study Abroad Consultancy">
+<meta property="og:description" content="Premier IELTS &amp; PTE Training Center and Study Abroad Consultancy in Sylhet, Bangladesh.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ── RESET & BASE ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Outfit',sans-serif;background:#04080f;color:#e8eaf6;overflow-x:hidden;cursor:none}
+
+/* ── CSS VARIABLES ── */
+:root{
+  --navy:#04080f;
+  --deep-blue:#060d1f;
+  --royal:#0a1628;
+  --cyan:#00d4ff;
+  --blue:#1a6fff;
+  --red:#e8002d;
+  --red-light:#ff4d6d;
+  --gold:#ffcc44;
+  --white:#ffffff;
+  --glass:rgba(255,255,255,0.04);
+  --glass-border:rgba(255,255,255,0.10);
+  --grad-brand:linear-gradient(135deg,#ff4d6d,#e8002d 30%,#4fa3ff 70%,#00d4ff);
+  --grad-btn:linear-gradient(135deg,#ff4d6d,#e8002d,#1a6fff,#00d4ff);
+  --grad-text:linear-gradient(90deg,#ff4d6d,#e8002d,#4fa3ff,#00d4ff);
+  --shadow-red:0 0 30px rgba(232,0,45,0.35);
+  --shadow-blue:0 0 30px rgba(0,212,255,0.35);
+  --shadow-purple:0 0 60px rgba(26,111,255,0.2);
+}
+
+/* ── CUSTOM CURSOR ── */
+.cursor{position:fixed;width:12px;height:12px;background:var(--cyan);border-radius:50%;pointer-events:none;z-index:9999;transition:transform .15s ease;mix-blend-mode:difference;transform:translate(-50%,-50%)}
+.cursor-ring{position:fixed;width:36px;height:36px;border:1.5px solid rgba(0,212,255,0.5);border-radius:50%;pointer-events:none;z-index:9998;transition:transform .25s ease,left .25s ease,top .25s ease;transform:translate(-50%,-50%)}
+
+/* ── SCROLL PROGRESS ── */
+#scroll-bar{position:fixed;top:0;left:0;height:3px;background:var(--grad-brand);z-index:10000;width:0%;transition:width .1s;box-shadow:0 0 10px rgba(0,212,255,0.6)}
+
+/* ── LOADING SCREEN ── */
+#loader{position:fixed;inset:0;background:var(--navy);z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity .6s,visibility .6s}
+#loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-logo{font-family:'Bebas Neue',sans-serif;font-size:clamp(3rem,8vw,6rem);background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 2s ease infinite}
+.loader-sub{font-size:.85rem;letter-spacing:4px;color:rgba(255,255,255,0.4);text-transform:uppercase;margin-top:.5rem}
+.loader-bar{width:200px;height:3px;background:rgba(255,255,255,0.1);border-radius:2px;margin-top:2rem;overflow:hidden}
+.loader-fill{height:100%;background:var(--grad-brand);width:0;animation:loadfill 1.8s ease forwards}
+@keyframes loadfill{from{width:0}to{width:100%}}
+@keyframes shimmer{0%,100%{background-position:0%}50%{background-position:100%}}
+
+/* ── FLOATING ORBS ── */
+.orb{position:fixed;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0;animation:float 8s ease-in-out infinite}
+.orb-1{width:500px;height:500px;background:rgba(26,111,255,0.12);top:-100px;right:-100px;animation-delay:0s}
+.orb-2{width:400px;height:400px;background:rgba(232,0,45,0.10);bottom:10%;left:-100px;animation-delay:-3s}
+.orb-3{width:300px;height:300px;background:rgba(0,212,255,0.08);top:40%;right:10%;animation-delay:-5s}
+@keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-30px) scale(1.05)}}
+
+/* ── NAVBAR ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;background:rgba(4,8,15,0.6);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid transparent;transition:all .3s}
+nav::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,212,255,0.4),rgba(232,0,45,0.4),transparent)}
+nav.scrolled{background:rgba(4,8,15,0.95);box-shadow:0 4px 30px rgba(0,0,0,0.4)}
+.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:2rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:300%;animation:shimmer 4s ease infinite;letter-spacing:2px;text-decoration:none}
+.nav-links{display:flex;align-items:center;gap:.2rem;list-style:none}
+.nav-links>li{position:relative}
+.nav-links>li>a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.5px;padding:.55rem .9rem;border-radius:6px;display:block;transition:color .3s;position:relative;white-space:nowrap;cursor:none}
+.nav-links>li>a::after{content:'';position:absolute;bottom:2px;left:.9rem;right:.9rem;height:2px;background:var(--grad-brand);transform:scaleX(0);transition:transform .3s;border-radius:2px}
+.nav-links>li>a:hover{color:var(--white)}
+.nav-links>li>a:hover::after,.nav-links>li.active>a::after{transform:scaleX(1)}
+
+/* ── DROPDOWNS ── */
+.dropdown{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%) translateY(-8px);min-width:210px;background:rgba(6,13,31,0.97);backdrop-filter:blur(20px);border:1px solid rgba(0,212,255,0.2);border-radius:12px;padding:.5rem;opacity:0;visibility:hidden;transition:all .25s ease;box-shadow:0 20px 60px rgba(0,0,0,0.6),0 0 30px rgba(0,212,255,0.08);pointer-events:none}
+.nav-links>li:hover .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);pointer-events:all}
+.dropdown a{display:block;padding:.65rem 1rem;color:rgba(255,255,255,0.8);text-decoration:none;font-size:.83rem;font-weight:500;border-radius:8px;transition:all .2s;cursor:none}
+.dropdown a:hover{background:rgba(0,212,255,0.1);color:var(--cyan);padding-left:1.4rem}
+/* Arrow indicator on parent */
+.has-dropdown>a .arrow{display:inline-block;transition:transform .3s;font-size:.7rem;margin-left:.2rem;vertical-align:middle}
+.has-dropdown:hover>a .arrow{transform:rotate(180deg)}
+
+/* ── MOBILE NAV ── */
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:.5rem;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--cyan);border-radius:2px;transition:all .3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(4,8,15,0.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,212,255,0.2);z-index:999;padding:1rem;max-height:80vh;overflow-y:auto}
+.mobile-nav.open{display:block}
+.mobile-nav a{display:block;color:rgba(255,255,255,0.85);text-decoration:none;padding:.75rem 1rem;border-radius:8px;font-weight:600;font-size:.9rem;transition:all .2s}
+.mobile-nav a:hover{background:rgba(0,212,255,0.1);color:var(--cyan)}
+.mobile-nav .mob-sub{padding-left:2rem;font-size:.82rem;color:rgba(255,255,255,0.55)!important;font-weight:500}
+.mobile-nav .mob-sub:hover{color:var(--cyan)!important;background:rgba(0,212,255,0.07)!important}
+
+/* ── SECTION BASE ── */
+section{position:relative;z-index:1;overflow:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 2rem}
+.section-pad{padding:100px 0}
+
+/* ── REVEAL ANIMATION ── */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-40px);transition:opacity .7s ease,transform .7s ease}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(40px);transition:opacity .7s ease,transform .7s ease}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+
+/* ── SECTION SEPARATOR ── */
+.sep{height:1px;background:linear-gradient(90deg,transparent,var(--cyan),var(--red),transparent);margin:0;box-shadow:0 0 20px rgba(0,212,255,0.3);opacity:.5}
+
+/* ── GRADIENT TEXT ── */
+.grad-text{background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 5s ease infinite}
+
+/* ── SECTION HEADING ── */
+.section-label{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--cyan);margin-bottom:1rem;padding:.3rem 1rem;border:1px solid rgba(0,212,255,0.3);border-radius:20px;background:rgba(0,212,255,0.05)}
+h2.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(2.5rem,5vw,4rem);line-height:1;margin-bottom:1.5rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 6s ease infinite}
+.subtitle{font-size:1.05rem;color:rgba(255,255,255,0.65);line-height:1.8;max-width:700px}
+.center{text-align:center}
+.center .subtitle{margin:0 auto}
+
+/* ── GLASS CARD ── */
+.glass{background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--glass-border);border-radius:20px}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 2rem;border-radius:50px;font-family:'Outfit',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.5px;cursor:none;border:none;outline:none;text-decoration:none;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s;white-space:nowrap}
+.btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,0.15),transparent);opacity:0;transition:opacity .3s}
+.btn:hover::before{opacity:1}
+.btn:hover{transform:translateY(-3px) scale(1.04)}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--grad-btn);background-size:200%;color:#fff;box-shadow:0 8px 32px rgba(232,0,45,0.3)}
+.btn-primary:hover{box-shadow:0 16px 48px rgba(232,0,45,0.5),0 0 30px rgba(0,212,255,0.3)}
+.btn-outline{background:transparent;color:var(--cyan);border:1.5px solid var(--cyan);box-shadow:0 0 15px rgba(0,212,255,0.2)}
+.btn-outline:hover{background:rgba(0,212,255,0.1);box-shadow:0 0 30px rgba(0,212,255,0.4)}
+/* Ripple */
+.ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,0.3);transform:scale(0);animation:ripple-anim .6s linear;pointer-events:none}
+@keyframes ripple-anim{to{transform:scale(4);opacity:0}}
+
+/* ── BACK TO TOP ── */
+#back-top{position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;border-radius:50%;background:var(--grad-btn);background-size:200%;border:none;cursor:none;display:flex;align-items:center;justify-content:center;font-size:1.2rem;z-index:900;opacity:0;visibility:hidden;transform:translateY(20px);transition:all .3s;box-shadow:0 8px 24px rgba(232,0,45,0.3)}
+#back-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+#back-top:hover{transform:translateY(-4px) scale(1.1);box-shadow:0 16px 40px rgba(232,0,45,0.4)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding-top:80px;background:radial-gradient(ellipse at 80% 50%,rgba(26,111,255,0.12) 0%,transparent 60%),radial-gradient(ellipse at 20% 50%,rgba(232,0,45,0.08) 0%,transparent 60%),var(--deep-blue)}
+.hero-left{padding:4rem 3rem 4rem 2rem;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:1.5rem;padding:.4rem 1rem;border:1px solid rgba(0,212,255,0.3);border-radius:20px;background:rgba(0,212,255,0.05);animation:fadeInDown .8s ease}
+.hero-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.5rem,7vw,6.5rem);line-height:.95;letter-spacing:2px;color:#fff;margin-bottom:1.5rem;animation:fadeInUp .9s ease .2s both}
+.hero-h1 .block{display:block;background:var(--grad-btn);background-size:200%;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 4s ease infinite;padding:.05em 0}
+.hero-p{font-size:1.05rem;color:rgba(255,255,255,0.72);line-height:1.8;margin-bottom:2.5rem;max-width:480px;animation:fadeInUp .9s ease .4s both}
+.hero-btns{display:flex;flex-wrap:wrap;gap:1rem;animation:fadeInUp .9s ease .6s both}
+.hero-stats{display:flex;gap:2rem;margin-top:3rem;animation:fadeInUp .9s ease .8s both}
+.stat-item{text-align:center}
+.stat-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 5s ease infinite;line-height:1}
+.stat-label{font-size:.75rem;color:rgba(255,255,255,0.5);letter-spacing:1px;text-transform:uppercase;margin-top:.25rem}
+.stat-div{width:1px;background:rgba(255,255,255,0.12);align-self:stretch}
+.hero-right{position:relative;height:100vh;overflow:hidden;animation:fadeIn 1.2s ease .3s both}
+.hero-img-wrap{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,22,40,0.75),rgba(4,8,15,0.3)),url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=900&q=80') center/cover no-repeat}
+.hero-glow-1{position:absolute;width:300px;height:300px;background:rgba(26,111,255,0.25);border-radius:50%;filter:blur(60px);bottom:20%;right:10%;animation:float 6s ease-in-out infinite;pointer-events:none}
+.hero-glow-2{position:absolute;width:200px;height:200px;background:rgba(232,0,45,0.2);border-radius:50%;filter:blur(50px);top:20%;left:10%;animation:float 7s ease-in-out infinite reverse;pointer-events:none}
+.hero-overlay-text{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);font-family:'Bebas Neue',sans-serif;font-size:clamp(4rem,7vw,7rem);color:rgba(255,255,255,0.03);white-space:nowrap;letter-spacing:10px;user-select:none;pointer-events:none}
+/* Scroll indicator */
+.scroll-indicator{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;color:rgba(255,255,255,0.35);font-size:.7rem;letter-spacing:2px;text-transform:uppercase;animation:fadeIn 1.5s ease 1.5s both;z-index:2}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,transparent,rgba(0,212,255,0.6));animation:scrollPulse 1.8s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
+
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ── ABOUT ── */
+#about{background:var(--royal)}
+.about-content{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about-icon-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.about-icon-card{padding:1.5rem;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(0,212,255,0.1);text-align:center;transition:all .3s;cursor:default}
+.about-icon-card:hover{background:rgba(0,212,255,0.07);border-color:rgba(0,212,255,0.3);transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,0.3)}
+.icon-emoji{font-size:2.5rem;margin-bottom:.75rem;display:block}
+.icon-label{font-size:.85rem;font-weight:600;color:rgba(255,255,255,0.8)}
+.why-us-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.why-card{padding:2rem 1.5rem;border-radius:18px;background:rgba(255,255,255,0.04);border:1px solid rgba(0,212,255,0.1);transition:all .3s;position:relative;overflow:hidden}
+.why-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--grad-brand);transform:scaleX(0);transition:transform .4s;transform-origin:left}
+.why-card:hover::before{transform:scaleX(1)}
+.why-card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(0,0,0,0.3),0 0 40px rgba(0,212,255,0.1)}
+.why-num{font-family:'Bebas Neue',sans-serif;font-size:3rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;opacity:.3;line-height:1;margin-bottom:.5rem}
+.why-title{font-size:1rem;font-weight:700;margin-bottom:.5rem;color:#fff}
+.why-text{font-size:.85rem;color:rgba(255,255,255,0.55);line-height:1.7}
+
+/* ── COURSES / GRAMMAR / IELTS / PTE ── */
+#grammar{background:var(--deep-blue)}
+#ielts{background:var(--royal)}
+#pte{background:var(--deep-blue)}
+.course-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem}
+.course-card{border-radius:24px;overflow:hidden;background:rgba(255,255,255,0.04);border:1px solid rgba(0,212,255,0.12);transition:all .4s;position:relative}
+.course-card:hover{transform:translateY(-10px);box-shadow:0 40px 80px rgba(0,0,0,0.4),0 0 60px rgba(0,212,255,0.12)}
+.course-poster{width:100%;height:260px;overflow:hidden;position:relative}
+.course-poster-inner{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;padding:2rem;text-align:center;background:linear-gradient(135deg,rgba(6,13,31,0.9),rgba(26,111,255,0.25));transition:transform .4s}
+.course-card:hover .course-poster-inner{transform:scale(1.04)}
+.course-poster-icon{font-size:3.5rem;filter:drop-shadow(0 0 20px rgba(0,212,255,0.4))}
+.course-poster-title{font-family:'Bebas Neue',sans-serif;font-size:2rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 5s ease infinite}
+.course-placeholder{font-size:.78rem;color:rgba(255,255,255,0.35);margin-top:.25rem}
+.course-body{padding:1.75rem}
+.course-name{font-size:1.2rem;font-weight:800;color:#fff;margin-bottom:.5rem}
+.course-desc{font-size:.88rem;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:1.25rem}
+
+/* ── CAROUSEL / SUCCESS STORIES ── */
+.carousel-wrap{overflow:hidden;margin:2rem 0;position:relative;border-radius:16px;mask-image:linear-gradient(90deg,transparent,black 5%,black 95%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,black 5%,black 95%,transparent)}
+.carousel-track{display:flex;gap:1.5rem;animation:slide 28s linear infinite;width:max-content}
+.carousel-track:hover{animation-play-state:paused}
+.carousel-card{width:200px;height:210px;flex-shrink:0;border-radius:16px;overflow:hidden;position:relative;transition:transform .3s;cursor:default}
+.carousel-card:hover{transform:scale(1.06)}
+.carousel-card-inner{width:100%;height:100%;background:linear-gradient(135deg,var(--royal),rgba(26,111,255,0.3));display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;border:1px solid rgba(0,212,255,0.2);border-radius:16px;padding:1.5rem;text-align:center}
+.carousel-card-inner.pte-style{background:linear-gradient(135deg,rgba(10,22,40,0.9),rgba(232,0,45,0.18))}
+.score-badge{font-family:'Bebas Neue',sans-serif;font-size:3rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 4s ease infinite;line-height:1}
+.score-name{font-size:.82rem;font-weight:700;color:rgba(255,255,255,0.9)}
+.score-tag{font-size:.7rem;color:var(--cyan);text-transform:uppercase;letter-spacing:1px;padding:.2rem .6rem;border:1px solid rgba(0,212,255,0.3);border-radius:10px;background:rgba(0,212,255,0.07)}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── FEATURES / HIGHLIGHTS ── */
+.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:4rem}
+.highlight-card{padding:2rem 1.25rem;border-radius:20px;background:rgba(255,255,255,0.04);border:1px solid rgba(0,212,255,0.1);text-align:center;transition:all .35s;position:relative;overflow:hidden}
+.highlight-card::after{content:'';position:absolute;inset:0;background:var(--grad-brand);opacity:0;transition:opacity .4s}
+.highlight-card:hover{transform:translateY(-8px);border-color:rgba(0,212,255,0.4);box-shadow:0 30px 60px rgba(0,0,0,0.3),0 0 40px rgba(0,212,255,0.1)}
+.highlight-icon{font-size:2.5rem;margin-bottom:1rem;display:block}
+.highlight-num{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 5s ease infinite;line-height:1;margin-bottom:.25rem}
+.highlight-label{font-size:.88rem;font-weight:600;color:rgba(255,255,255,0.7);line-height:1.4}
+
+/* ── TESTIMONIALS ── */
+#testimonials{background:var(--royal)}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.testimonial-card{padding:2rem;border-radius:20px;background:rgba(255,255,255,0.04);border:1px solid rgba(0,212,255,0.1);transition:all .3s;position:relative}
+.testimonial-card::before{content:'\201C';position:absolute;top:.75rem;left:1.25rem;font-size:4rem;font-family:Georgia,serif;color:rgba(0,212,255,0.15);line-height:1}
+.testimonial-card:hover{transform:translateY(-6px);border-color:rgba(0,212,255,0.3);box-shadow:0 24px 48px rgba(0,0,0,0.3),0 0 30px rgba(0,212,255,0.08)}
+.testimonial-text{font-size:.9rem;color:rgba(255,255,255,0.7);line-height:1.8;margin-bottom:1.5rem;padding-top:1.5rem}
+.testimonial-author{display:flex;align-items:center;gap:.9rem}
+.testimonial-avatar{width:44px;height:44px;border-radius:50%;background:var(--grad-btn);background-size:200%;display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:1.3rem;color:#fff;flex-shrink:0;border:2px solid rgba(0,212,255,0.3)}
+.testimonial-name{font-weight:700;font-size:.92rem;color:#fff}
+.testimonial-score{font-size:.78rem;color:var(--cyan);font-weight:600}
+.stars{color:var(--gold);font-size:.85rem;letter-spacing:1px;margin-bottom:.75rem}
+
+/* ── CONTACT ── */
+#contact{background:var(--navy)}
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:4rem;align-items:start}
+.form-group{margin-bottom:1.25rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{display:block;font-size:.8rem;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:.5rem}
+input,textarea,select{width:100%;padding:.85rem 1.2rem;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;color:#fff;font-family:'Outfit',sans-serif;font-size:.9rem;outline:none;transition:all .3s;resize:none}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,0.3)}
+input:focus,textarea:focus,select:focus{border-color:var(--cyan);background:rgba(0,212,255,0.05);box-shadow:0 0 20px rgba(0,212,255,0.15)}
+select option{background:#0a1628;color:#fff}
+.contact-cards{display:flex;flex-direction:column;gap:1.25rem}
+.contact-card{padding:1.75rem;border-radius:18px;background:rgba(255,255,255,0.04);border:1px solid rgba(0,212,255,0.12);display:flex;align-items:center;gap:1.25rem;transition:all .3s;text-decoration:none}
+.contact-card:hover{background:rgba(0,212,255,0.07);border-color:rgba(0,212,255,0.3);transform:translateX(8px)}
+.contact-icon{width:50px;height:50px;border-radius:14px;background:rgba(0,212,255,0.1);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;border:1px solid rgba(0,212,255,0.2)}
+.contact-info p{font-size:.78rem;color:rgba(255,255,255,0.45);margin-bottom:.2rem;text-transform:uppercase;letter-spacing:1px}
+.contact-info a,.contact-info span{font-size:.95rem;font-weight:600;color:#fff;text-decoration:none;transition:color .3s}
+.contact-info a:hover{color:var(--cyan)}
+.map-wrap{margin-top:2rem;height:200px;border-radius:18px;overflow:hidden;border:1px solid rgba(0,212,255,0.12)}
+.map-wrap iframe{width:100%;height:100%;border:none;opacity:.75;transition:opacity .3s}
+.map-wrap:hover iframe{opacity:1}
+/* Form success message */
+#form-success{display:none;margin-top:1rem;padding:1rem 1.5rem;border-radius:12px;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:var(--cyan);font-size:.9rem;font-weight:600;text-align:center}
+
+/* ── FAQ ── */
+#faq{background:var(--deep-blue)}
+.faq-list{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:1rem}
+.faq-item{border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(0,212,255,0.1);overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:rgba(0,212,255,0.35);box-shadow:0 0 30px rgba(0,212,255,0.08)}
+.faq-q{padding:1.5rem;font-weight:700;font-size:1rem;cursor:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;user-select:none;transition:color .3s;color:rgba(255,255,255,0.9)}
+.faq-item.open .faq-q{color:var(--cyan)}
+.faq-arrow{font-size:1.2rem;transition:transform .4s;flex-shrink:0;color:var(--cyan);line-height:1}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s ease,padding .4s ease;color:rgba(255,255,255,0.6);font-size:.9rem;line-height:1.8}
+.faq-item.open .faq-a{max-height:400px;padding:0 1.5rem 1.5rem}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);padding:4rem 0 2rem;position:relative}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),var(--red),transparent)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-logo-text{font-family:'Bebas Neue',sans-serif;font-size:2.5rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 5s ease infinite;line-height:1;margin-bottom:.75rem;display:block}
+.footer-desc{font-size:.88rem;color:rgba(255,255,255,0.5);line-height:1.8;max-width:280px;margin-bottom:1.5rem}
+.footer-social{display:flex;gap:.75rem;flex-wrap:wrap}
+.social-btn{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;text-decoration:none;transition:all .3s;cursor:none}
+.social-btn:hover{background:rgba(0,212,255,0.15);border-color:var(--cyan);transform:translateY(-4px);box-shadow:0 10px 20px rgba(0,212,255,0.2)}
+.footer-col h4{font-size:.82rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin-bottom:1.25rem}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:.65rem}
+.footer-col ul li a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:.88rem;transition:all .3s;display:inline-flex;align-items:center;gap:.4rem;cursor:none}
+.footer-col ul li a:hover{color:var(--cyan);padding-left:.4rem}
+.footer-addr{font-size:.85rem;color:rgba(255,255,255,0.5);line-height:1.9}
+.footer-addr strong{color:rgba(255,255,255,0.8);display:block;margin-bottom:.25rem}
+.footer-bottom{padding-top:2rem;border-top:1px solid rgba(255,255,255,0.07);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-size:.82rem;color:rgba(255,255,255,0.35)}
+.footer-credit{font-size:.82rem;color:rgba(255,255,255,0.35)}
+.footer-credit span{color:var(--cyan)}
+
+/* ── MODAL / POPUP ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.82);backdrop-filter:blur(8px);z-index:5000;display:flex;align-items:center;justify-content:center;padding:1rem;opacity:0;visibility:hidden;transition:all .3s}
+.modal-overlay.active{opacity:1;visibility:visible}
+.modal{background:rgba(6,13,31,0.97);border:1px solid rgba(0,212,255,0.25);border-radius:24px;padding:2.5rem;width:100%;max-width:480px;position:relative;transform:scale(.9) translateY(20px);transition:all .35s;max-height:92vh;overflow-y:auto}
+.modal-overlay.active .modal{transform:scale(1) translateY(0)}
+.modal-close{position:absolute;top:1rem;right:1rem;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);font-size:1.1rem;cursor:none;display:flex;align-items:center;justify-content:center;transition:all .3s;line-height:1}
+.modal-close:hover{background:rgba(232,0,45,0.2);border-color:var(--red);color:#fff}
+.modal h3{font-family:'Bebas Neue',sans-serif;font-size:2rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 4s ease infinite;margin-bottom:.5rem}
+.modal p.sub{font-size:.88rem;color:rgba(255,255,255,0.5);margin-bottom:1.75rem}
+.price-badge{display:inline-flex;align-items:center;gap:.75rem;padding:.55rem 1.25rem;border-radius:12px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);margin-bottom:1.5rem}
+.price-badge .price-label{font-size:.78rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:1px}
+.price-badge .price-val{font-family:'Bebas Neue',sans-serif;font-size:2rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 3s ease infinite;line-height:1}
+.radio-group{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.radio-opt{flex:1;min-width:120px}
+.radio-opt input[type="radio"]{display:none}
+.radio-opt label{display:flex;align-items:center;justify-content:center;gap:.4rem;padding:.75rem 1rem;border-radius:12px;background:rgba(255,255,255,0.05);border:1.5px solid rgba(255,255,255,0.1);cursor:none;font-size:.88rem;font-weight:600;color:rgba(255,255,255,0.7);transition:all .3s;text-transform:none;letter-spacing:0;text-align:center;line-height:1.3}
+.radio-opt input[type="radio"]:checked + label{background:rgba(0,212,255,0.12);border-color:var(--cyan);color:var(--cyan);box-shadow:0 0 20px rgba(0,212,255,0.15)}
+/* Modal success */
+#modal-success{display:none;text-align:center;padding:1rem;color:var(--cyan);font-weight:700;font-size:.95rem;border:1px solid rgba(0,212,255,0.3);border-radius:12px;background:rgba(0,212,255,0.08);margin-top:1rem}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  #hero{grid-template-columns:1fr}
+  .hero-right{position:absolute;inset:0;opacity:.2;z-index:0}
+  .hero-left{padding:8rem 2rem 5rem;z-index:1;max-width:100%}
+  .about-content{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .highlights{grid-template-columns:repeat(2,1fr)}
+  .testimonials-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .course-grid{grid-template-columns:1fr}
+  .why-us-cards{grid-template-columns:1fr 1fr}
+  .about-icon-grid{grid-template-columns:1fr 1fr}
+  .form-row{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .hero-stats{gap:1.25rem}
+  h2.section-title{font-size:2.4rem}
+  .testimonials-grid{grid-template-columns:1fr}
+  .highlights{grid-template-columns:repeat(2,1fr)}
+  .section-pad{padding:70px 0}
+}
+@media(max-width:480px){
+  .why-us-cards{grid-template-columns:1fr}
+  .highlights{grid-template-columns:1fr 1fr}
+  .hero-btns{flex-direction:column}
+  .btn{justify-content:center;width:100%}
+  .hero-stats{gap:.75rem}
+  .stat-num{font-size:2rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ─── LOADER ─── -->
+<div id="loader" role="status" aria-label="Loading YES ACADEMY">
+  <div class="loader-logo">YES ACADEMY</div>
+  <div class="loader-sub">Launching Your Future</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- Scroll progress bar -->
+<div id="scroll-bar" role="progressbar" aria-label="Scroll progress"></div>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cur" aria-hidden="true"></div>
+<div class="cursor-ring" id="curRing" aria-hidden="true"></div>
+
+<!-- Background orbs -->
+<div class="orb orb-1" aria-hidden="true"></div>
+<div class="orb orb-2" aria-hidden="true"></div>
+<div class="orb orb-3" aria-hidden="true"></div>
+
+<!-- Back to top -->
+<button id="back-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo" aria-label="YES ACADEMY Home">YES ACADEMY</a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li class="has-dropdown">
+      <a href="#grammar">Grammar <span class="arrow">▾</span></a>
+      <div class="dropdown" role="menu">
+        <a href="#grammar" role="menuitem">📘 Basic Grammar to Advance</a>
+        <a href="#grammar" role="menuitem">🚀 PTE Booster</a>
+      </div>
+    </li>
+    <li class="has-dropdown">
+      <a href="#ielts">IELTS <span class="arrow">▾</span></a>
+      <div class="dropdown" role="menu">
+        <a href="#ielts" role="menuitem">🎓 IELTS Academic</a>
+        <a href="#ielts" role="menuitem">✈️ IELTS General Training</a>
+      </div>
+    </li>
+    <li class="has-dropdown">
+      <a href="#pte">PTE <span class="arrow">▾</span></a>
+      <div class="dropdown" role="menu">
+        <a href="#pte" role="menuitem">🌐 PTE Academic / UKVI</a>
+        <a href="#pte" role="menuitem">🇨🇦 PTE Core</a>
+      </div>
+    </li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#hero"         onclick="closeMobile()">🏠 Home</a>
+  <a href="#about"        onclick="closeMobile()">👥 About Us</a>
+  <a href="#grammar"      onclick="closeMobile()">📘 Grammar</a>
+  <a class="mob-sub" href="#grammar" onclick="closeMobile()">• Basic Grammar to Advance</a>
+  <a class="mob-sub" href="#grammar" onclick="closeMobile()">• PTE Booster</a>
+  <a href="#ielts"        onclick="closeMobile()">🎓 IELTS</a>
+  <a class="mob-sub" href="#ielts" onclick="closeMobile()">• IELTS Academic</a>
+  <a class="mob-sub" href="#ielts" onclick="closeMobile()">• IELTS General Training</a>
+  <a href="#pte"          onclick="closeMobile()">🌐 PTE</a>
+  <a class="mob-sub" href="#pte" onclick="closeMobile()">• PTE Academic / UKVI</a>
+  <a class="mob-sub" href="#pte" onclick="closeMobile()">• PTE Core</a>
+  <a href="#testimonials" onclick="closeMobile()">⭐ Reviews</a>
+  <a href="#contact"      onclick="closeMobile()">📞 Contact</a>
+  <a href="#faq"          onclick="closeMobile()">❓ FAQ</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero section">
+  <div class="hero-left">
+    <div class="hero-badge">📍 #1 English Proficiency Training Center · Sylhet, Bangladesh</div>
+    <h1 class="hero-h1">
+      KICK-START YOUR<br>
+      <span class="block">STUDY ABROAD</span>
+      JOURNEY
+    </h1>
+    <p class="hero-p">Transform Your Future with YES ACADEMY — Your One-Stop Solution for Study Abroad Consultancy and English Language Proficiency Training in Sylhet.</p>
+    <div class="hero-btns">
+      <button class="btn btn-primary" id="btn-counselling" onclick="openModal('counselling')">🎯 Get Free Counselling</button>
+      <button class="btn btn-outline" id="btn-mocktest" onclick="openModal('mocktest')">📝 Book Mock Test</button>
+    </div>
+    <div class="hero-stats" aria-label="Academy highlights">
+      <div class="stat-item">
+        <div class="stat-num" id="stat1">500+</div>
+        <div class="stat-label">Students Enrolled</div>
+      </div>
+      <div class="stat-div" aria-hidden="true"></div>
+      <div class="stat-item">
+        <div class="stat-num" id="stat2">95%</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+      <div class="stat-div" aria-hidden="true"></div>
+      <div class="stat-item">
+        <div class="stat-num" id="stat3">10+</div>
+        <div class="stat-label">Years of Expertise</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right" aria-hidden="true">
+    <div class="hero-img-wrap"></div>
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-overlay-text">YES ACADEMY</div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════ -->
+<section id="about" class="section-pad" aria-label="About YES ACADEMY">
+  <div class="container">
+    <div class="center reveal">
+      <span class="section-label">Who We Are</span>
+      <h2 class="section-title">YES ACADEMY</h2>
+      <p class="subtitle">YES ACADEMY is Sylhet's premier English Language Proficiency Training Center and Study Abroad Consultancy. Founded with a passion for transforming students' futures, we combine expert instruction, proven methodologies, and personalized mentoring to help you achieve your dream IELTS or PTE score and secure admission at top international universities.</p>
+    </div>
+
+    <!-- Key Features Grid -->
+    <div class="highlights" style="margin-top:3rem">
+      <div class="highlight-card reveal">
+        <span class="highlight-icon">🏆</span>
+        <div class="highlight-num">500+</div>
+        <div class="highlight-label">Students Enrolled</div>
+      </div>
+      <div class="highlight-card reveal">
+        <span class="highlight-icon">🎯</span>
+        <div class="highlight-num">95%</div>
+        <div class="highlight-label">Target Score Success Rate</div>
+      </div>
+      <div class="highlight-card reveal">
+        <span class="highlight-icon">📅</span>
+        <div class="highlight-num">10+</div>
+        <div class="highlight-label">Years of Excellence</div>
+      </div>
+      <div class="highlight-card reveal">
+        <span class="highlight-icon">🌍</span>
+        <div class="highlight-num">30+</div>
+        <div class="highlight-label">University Partners</div>
+      </div>
+    </div>
+
+    <div class="about-content" style="margin-top:5rem">
+      <div class="reveal-left">
+        <div class="about-icon-grid">
+          <div class="about-icon-card"><span class="icon-emoji">🏆</span><div class="icon-label">Expert Instructors</div></div>
+          <div class="about-icon-card"><span class="icon-emoji">🌍</span><div class="icon-label">Global Network</div></div>
+          <div class="about-icon-card"><span class="icon-emoji">📊</span><div class="icon-label">Score Analytics</div></div>
+          <div class="about-icon-card"><span class="icon-emoji">🎯</span><div class="icon-label">Personalized Plans</div></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <span class="section-label">Our Promise</span>
+        <h2 class="section-title" style="font-size:clamp(2rem,4vw,2.8rem)">WHY CHOOSE US?</h2>
+        <p style="color:rgba(255,255,255,0.65);line-height:1.9;font-size:.95rem">At YES ACADEMY, we don't just teach English — we build confidence and capability. Our small-batch classes ensure personalized attention, while our state-of-the-art mock test facility simulates real exam conditions. We stay updated with the latest IELTS and PTE exam patterns, providing the most current study materials and strategies. Our dedicated counsellors guide you through every step of your study abroad journey — from course selection to visa assistance.</p>
+        <div style="margin-top:1.5rem">
+          <button class="btn btn-primary" onclick="openModal('counselling')">🎯 Free Counselling Session</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-us-cards">
+      <div class="why-card reveal"><div class="why-num">01</div><div class="why-title">Expert-Led Training</div><div class="why-text">Learn from certified IELTS &amp; PTE trainers with 10+ years of teaching experience and proven results.</div></div>
+      <div class="why-card reveal"><div class="why-num">02</div><div class="why-title">Real Exam Simulation</div><div class="why-text">Practice with full-length mock tests in exam-like conditions to eliminate anxiety and boost your confidence.</div></div>
+      <div class="why-card reveal"><div class="why-num">03</div><div class="why-title">Study Abroad Counselling</div><div class="why-text">Free one-on-one consultancy sessions for university applications, SOP writing, and visa guidance.</div></div>
+      <div class="why-card reveal"><div class="why-num">04</div><div class="why-title">Small Batch Classes</div><div class="why-text">Intimate groups ensure every student gets personalized attention, individual feedback, and targeted improvement.</div></div>
+      <div class="why-card reveal"><div class="why-num">05</div><div class="why-title">Latest Study Materials</div><div class="why-text">Updated resources aligned with the newest exam formats, scoring criteria, and question types.</div></div>
+      <div class="why-card reveal"><div class="why-num">06</div><div class="why-title">95% Success Rate</div><div class="why-text">Our students consistently achieve their target band scores and secure placements at top universities worldwide.</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     GRAMMAR
+════════════════════════════════════════════ -->
+<section id="grammar" class="section-pad" aria-label="Grammar courses">
+  <div class="container">
+    <div class="center reveal">
+      <span class="section-label">Foundation First</span>
+      <h2 class="section-title">WHY GRAMMAR?</h2>
+      <p class="subtitle">Grammar is the backbone of English language proficiency. A strong grammatical foundation dramatically improves your IELTS and PTE scores by enhancing writing coherence, speaking fluency, reading comprehension, and listening accuracy. At YES ACADEMY, we build your grammar from the ground up — making complex rules simple, memorable, and exam-ready.</p>
+    </div>
+
+    <div style="margin-top:4rem">
+      <div class="center reveal" style="margin-bottom:2.5rem">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title">OUR GRAMMAR COURSES</h2>
+      </div>
+      <div class="course-grid">
+        <div class="course-card reveal-left">
+          <div class="course-poster">
+            <div class="course-poster-inner">
+              <div class="course-poster-icon">📘</div>
+              <div class="course-poster-title">Basic to Advanced</div>
+              <div class="course-placeholder">Course Poster Coming Soon</div>
+            </div>
+          </div>
+          <div class="course-body">
+            <div class="course-name">Basic Grammar to Advance</div>
+            <div class="course-desc">A comprehensive journey from fundamental grammar rules to advanced structures. Perfect for beginners and intermediate learners aiming for exam excellence. Covers tenses, modals, conditionals, passive voice, and more.</div>
+            <button class="btn btn-primary" id="enroll-grammar-basic" onclick="openEnroll('Basic Grammar to Advance')">✨ Enroll Now</button>
+          </div>
+        </div>
+        <div class="course-card reveal-right">
+          <div class="course-poster">
+            <div class="course-poster-inner">
+              <div class="course-poster-icon">🚀</div>
+              <div class="course-poster-title">PTE Booster</div>
+              <div class="course-placeholder">Course Poster Coming Soon</div>
+            </div>
+          </div>
+          <div class="course-body">
+            <div class="course-name">PTE Booster</div>
+            <div class="course-desc">Targeted grammar enhancement designed specifically for PTE exam success. Focus on high-impact grammar patterns that directly improve your PTE score across Speaking, Writing, Reading, and Listening.</div>
+            <button class="btn btn-primary" id="enroll-pte-booster" onclick="openEnroll('PTE Booster')">✨ Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     IELTS
+════════════════════════════════════════════ -->
+<section id="ielts" class="section-pad" aria-label="IELTS courses">
+  <div class="container">
+    <div class="center reveal">
+      <span class="section-label">Global Standard</span>
+      <h2 class="section-title">WHY IELTS WITH US?</h2>
+      <p class="subtitle">IELTS is the world's most recognized English language qualification, accepted by 11,000+ organizations in 140+ countries. Our IELTS training combines targeted skill development with intensive mock testing to help you achieve your dream band score — whether you need 6.5, 7, or 8+. We cover all four skills: Listening, Reading, Writing, and Speaking with individual feedback sessions.</p>
+    </div>
+
+    <!-- Success stories carousel -->
+    <div style="margin-top:4rem">
+      <div class="center reveal" style="margin-bottom:1.5rem">
+        <span class="section-label">Student Achievements</span>
+        <h2 class="section-title">IELTS SUCCESS STORIES</h2>
+      </div>
+      <div class="carousel-wrap reveal" aria-label="IELTS student scores carousel">
+        <div class="carousel-track" id="ieltsCarousel" aria-hidden="true">
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">8.0</div><div class="score-name">Rashed Ahmed</div><div class="score-tag">IELTS Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">7.5</div><div class="score-name">Nusrat Jahan</div><div class="score-tag">IELTS GT</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">7.0</div><div class="score-name">Tanvir Islam</div><div class="score-tag">IELTS Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">8.5</div><div class="score-name">Mehnaz Begum</div><div class="score-tag">IELTS GT</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">7.5</div><div class="score-name">Arif Hossain</div><div class="score-tag">IELTS Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">6.5</div><div class="score-name">Salma Khatun</div><div class="score-tag">IELTS GT</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">7.0</div><div class="score-name">Jahid Hasan</div><div class="score-tag">IELTS Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">8.0</div><div class="score-name">Mitu Akter</div><div class="score-tag">IELTS GT</div></div></div>
+          <!-- Duplicates for seamless loop -->
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">8.0</div><div class="score-name">Rashed Ahmed</div><div class="score-tag">IELTS Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">7.5</div><div class="score-name">Nusrat Jahan</div><div class="score-tag">IELTS GT</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">7.0</div><div class="score-name">Tanvir Islam</div><div class="score-tag">IELTS Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">8.5</div><div class="score-name">Mehnaz Begum</div><div class="score-tag">IELTS GT</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">7.5</div><div class="score-name">Arif Hossain</div><div class="score-tag">IELTS Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">6.5</div><div class="score-name">Salma Khatun</div><div class="score-tag">IELTS GT</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">7.0</div><div class="score-name">Jahid Hasan</div><div class="score-tag">IELTS Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner"><div class="score-badge">8.0</div><div class="score-name">Mitu Akter</div><div class="score-tag">IELTS GT</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Courses -->
+    <div style="margin-top:4rem">
+      <div class="center reveal" style="margin-bottom:2.5rem">
+        <span class="section-label">Course Offerings</span>
+        <h2 class="section-title">OUR IELTS COURSES</h2>
+      </div>
+      <div class="course-grid">
+        <div class="course-card reveal-left">
+          <div class="course-poster">
+            <div class="course-poster-inner">
+              <div class="course-poster-icon">🎓</div>
+              <div class="course-poster-title">IELTS Academic</div>
+              <div class="course-placeholder">Course Poster Coming Soon</div>
+            </div>
+          </div>
+          <div class="course-body">
+            <div class="course-name">IELTS Academic</div>
+            <div class="course-desc">Designed for students seeking university admission abroad. Advanced academic reading, graph/essay writing, task analysis, and formal speaking practice with detailed feedback from expert trainers.</div>
+            <button class="btn btn-primary" id="enroll-ielts-academic" onclick="openEnroll('IELTS Academic')">✨ Enroll Now</button>
+          </div>
+        </div>
+        <div class="course-card reveal-right">
+          <div class="course-poster">
+            <div class="course-poster-inner">
+              <div class="course-poster-icon">✈️</div>
+              <div class="course-poster-title">IELTS General Training</div>
+              <div class="course-placeholder">Course Poster Coming Soon</div>
+            </div>
+          </div>
+          <div class="course-body">
+            <div class="course-name">IELTS General Training</div>
+            <div class="course-desc">Perfect for immigration and work visa applicants. Focus on everyday English, formal &amp; informal letter writing, practical reading comprehension, and real-life speaking scenarios.</div>
+            <button class="btn btn-primary" id="enroll-ielts-gt" onclick="openEnroll('IELTS General Training')">✨ Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     PTE
+════════════════════════════════════════════ -->
+<section id="pte" class="section-pad" aria-label="PTE courses">
+  <div class="container">
+    <div class="center reveal">
+      <span class="section-label">Computer-Based Excellence</span>
+      <h2 class="section-title">WHY PTE WITH US?</h2>
+      <p class="subtitle">PTE Academic is the world's leading computer-based English language test, trusted by thousands of universities and governments globally. At YES ACADEMY, we decode the PTE algorithm to maximize your score. Our practice tools, score prediction models, and template strategies help you ace every PTE task type — from Summarize Written Text to Re-Tell Lecture.</p>
+    </div>
+
+    <!-- PTE Carousel -->
+    <div style="margin-top:4rem">
+      <div class="center reveal" style="margin-bottom:1.5rem">
+        <span class="section-label">Student Achievements</span>
+        <h2 class="section-title">PTE SUCCESS STORIES</h2>
+      </div>
+      <div class="carousel-wrap reveal" aria-label="PTE student scores carousel">
+        <div class="carousel-track" id="pteCarousel" style="animation-direction:reverse;animation-duration:24s" aria-hidden="true">
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">90</div><div class="score-name">Farhan Kabir</div><div class="score-tag">PTE Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">85</div><div class="score-name">Sabrina Islam</div><div class="score-tag">PTE Core</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">79</div><div class="score-name">Imran Chowdhury</div><div class="score-tag">PTE UKVI</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">88</div><div class="score-name">Rabeya Begum</div><div class="score-tag">PTE Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">82</div><div class="score-name">Shafiq Ahmed</div><div class="score-tag">PTE Core</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">76</div><div class="score-name">Tania Rahman</div><div class="score-tag">PTE Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">83</div><div class="score-name">Nayeem Uddin</div><div class="score-tag">PTE UKVI</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">91</div><div class="score-name">Riya Chowdhury</div><div class="score-tag">PTE Academic</div></div></div>
+          <!-- Duplicates for seamless loop -->
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">90</div><div class="score-name">Farhan Kabir</div><div class="score-tag">PTE Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">85</div><div class="score-name">Sabrina Islam</div><div class="score-tag">PTE Core</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">79</div><div class="score-name">Imran Chowdhury</div><div class="score-tag">PTE UKVI</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">88</div><div class="score-name">Rabeya Begum</div><div class="score-tag">PTE Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">82</div><div class="score-name">Shafiq Ahmed</div><div class="score-tag">PTE Core</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">76</div><div class="score-name">Tania Rahman</div><div class="score-tag">PTE Academic</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">83</div><div class="score-name">Nayeem Uddin</div><div class="score-tag">PTE UKVI</div></div></div>
+          <div class="carousel-card"><div class="carousel-card-inner pte-style"><div class="score-badge">91</div><div class="score-name">Riya Chowdhury</div><div class="score-tag">PTE Academic</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PTE Courses -->
+    <div style="margin-top:4rem">
+      <div class="center reveal" style="margin-bottom:2.5rem">
+        <span class="section-label">Course Offerings</span>
+        <h2 class="section-title">OUR PTE COURSES</h2>
+      </div>
+      <div class="course-grid">
+        <div class="course-card reveal-left">
+          <div class="course-poster">
+            <div class="course-poster-inner">
+              <div class="course-poster-icon">🌐</div>
+              <div class="course-poster-title">PTE Academic / UKVI</div>
+              <div class="course-placeholder">Course Poster Coming Soon</div>
+            </div>
+          </div>
+          <div class="course-body">
+            <div class="course-name">PTE Academic / UKVI</div>
+            <div class="course-desc">Comprehensive PTE Academic preparation including UKVI format training. Master all 20 task types with proven templates, AI scoring practice, and score prediction models for rapid improvement.</div>
+            <button class="btn btn-primary" id="enroll-pte-academic" onclick="openEnroll('PTE Academic / UKVI')">✨ Enroll Now</button>
+          </div>
+        </div>
+        <div class="course-card reveal-right">
+          <div class="course-poster">
+            <div class="course-poster-inner">
+              <div class="course-poster-icon">🇨🇦</div>
+              <div class="course-poster-title">PTE Core</div>
+              <div class="course-placeholder">Course Poster Coming Soon</div>
+            </div>
+          </div>
+          <div class="course-body">
+            <div class="course-name">PTE Core</div>
+            <div class="course-desc">Tailored for Canadian immigration pathways (Express Entry &amp; PR). Focus on real-world English communication skills with specialized support for PTE Core task types and scoring benchmarks.</div>
+            <button class="btn btn-primary" id="enroll-pte-core" onclick="openEnroll('PTE Core')">✨ Enroll Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+<section id="testimonials" class="section-pad" aria-label="Student testimonials">
+  <div class="container">
+    <div class="center reveal">
+      <span class="section-label">What Students Say</span>
+      <h2 class="section-title">SUCCESS STORIES</h2>
+      <p class="subtitle">Real words from real students who achieved their dream scores and secured international admissions with YES ACADEMY's guidance.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"YES ACADEMY transformed my English completely. I went from Band 5.5 to Band 7.5 in just three months. The mock tests and personal feedback made all the difference. Now I'm at the University of Melbourne!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">R</div>
+          <div>
+            <div class="testimonial-name">Rashed Ahmed</div>
+            <div class="testimonial-score">IELTS Academic · Band 7.5 → 8.0</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The PTE Academic course here is phenomenal. Detailed strategies for every task type, AI practice sessions, and incredibly supportive trainers. Scored 88 on my first attempt. Highly recommended!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">R</div>
+          <div>
+            <div class="testimonial-name">Rabeya Begum</div>
+            <div class="testimonial-score">PTE Academic · Score: 88</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">"The study abroad consultancy is exceptional. They helped me with SOP writing, university shortlisting, and visa application. I got admission to three universities in Canada. Thank you YES ACADEMY!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sabrina Islam</div>
+            <div class="testimonial-score">PTE Core · Canada PR Applicant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact" class="section-pad" aria-label="Contact YES ACADEMY">
+  <div class="container">
+    <div class="center reveal" style="margin-bottom:4rem">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">CONTACT US</h2>
+      <p class="subtitle">Ready to start your journey? Reach out to us today and let's discuss how YES ACADEMY can help you achieve your goals.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="reveal-left">
+        <div class="glass" style="padding:2.5rem;border-radius:24px">
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;margin-bottom:1.75rem;background:var(--grad-text);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;background-size:200%;animation:shimmer 5s ease infinite">Send Us a Message</h3>
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="c-fname">First Name</label>
+                <input type="text" id="c-fname" name="firstName" placeholder="Your first name" autocomplete="given-name" required>
+              </div>
+              <div class="form-group">
+                <label for="c-lname">Last Name</label>
+                <input type="text" id="c-lname" name="lastName" placeholder="Your last name" autocomplete="family-name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="c-phone">Mobile Number</label>
+              <input type="tel" id="c-phone" name="phone" placeholder="+880 1XXX-XXXXXX" autocomplete="tel" required>
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email Address</label>
+              <input type="email" id="c-email" name="email" placeholder="your@email.com" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="c-interest">I'm Interested In</label>
+              <select id="c-interest" name="interest" required>
+                <option value="" disabled selected>Select a course or service</option>
+                <option value="ielts-academic">IELTS Academic</option>
+                <option value="ielts-gt">IELTS General Training</option>
+                <option value="pte-academic">PTE Academic / UKVI</option>
+                <option value="pte-core">PTE Core</option>
+                <option value="grammar-basic">Basic Grammar to Advance</option>
+                <option value="pte-booster">PTE Booster</option>
+                <option value="study-abroad">Study Abroad Consultancy</option>
+                <option value="mock-test">Mock Test Booking</option>
+                <option value="free-counselling">Free Counselling Session</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="c-message">Your Message</label>
+              <textarea id="c-message" name="message" rows="4" placeholder="Tell us about your goals, current English level, or any questions you have..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" id="contact-submit">
+              🚀 Send Message
+            </button>
+          </form>
+          <div id="form-success" role="alert">✅ Message sent! We'll get back to you within 24 hours.</div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="reveal-right">
+        <div class="contact-cards">
+          <a class="contact-card" href="tel:+8801XXXXXXXXX" aria-label="Call YES ACADEMY">
+            <div class="contact-icon">📞</div>
+            <div class="contact-info">
+              <p>Call / WhatsApp</p>
+              <span>+880 1XXX-XXXXXX</span>
+            </div>
+          </a>
+          <a class="contact-card" href="mailto:info@yesacademy.com.bd" aria-label="Email YES ACADEMY">
+            <div class="contact-icon">📧</div>
+            <div class="contact-info">
+              <p>Email Address</p>
+              <a href="mailto:info@yesacademy.com.bd">info@yesacademy.com.bd</a>
+            </div>
+          </a>
+          <div class="contact-card" style="cursor:default">
+            <div class="contact-icon">📍</div>
+            <div class="contact-info">
+              <p>Our Location</p>
+              <span>Sylhet, Bangladesh</span>
+            </div>
+          </div>
+          <div class="contact-card" style="cursor:default">
+            <div class="contact-icon">🕐</div>
+            <div class="contact-info">
+              <p>Office Hours</p>
+              <span>Sat – Thu: 9 AM – 8 PM</span>
+            </div>
+          </div>
+          <a class="contact-card" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp YES ACADEMY" style="background:rgba(37,211,102,0.07);border-color:rgba(37,211,102,0.25)">
+            <div class="contact-icon" style="background:rgba(37,211,102,0.1);border-color:rgba(37,211,102,0.3)">💬</div>
+            <div class="contact-info">
+              <p>WhatsApp Us</p>
+              <span style="color:#25d366">Chat on WhatsApp</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-wrap" aria-label="Academy location map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.1!2d91.8833!3d24.8949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDUzJzQyLjAiTiA5McKwNTMnMDAuMCJF!5e0!3m2!1sen!2sbd!4v1234567890"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="YES ACADEMY Location, Sylhet Bangladesh">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════ -->
+<section id="faq" class="section-pad" aria-label="Frequently asked questions">
+  <div class="container">
+    <div class="center reveal" style="margin-bottom:3rem">
+      <span class="section-label">Got Questions?</span>
+      <h2 class="section-title">FAQ</h2>
+      <p class="subtitle">Everything you need to know about YES ACADEMY's courses, enrollments, and study abroad services.</p>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleFaq(this)">
+          What courses does YES ACADEMY offer?
+          <span class="faq-arrow" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-a">YES ACADEMY offers IELTS Academic, IELTS General Training, PTE Academic/UKVI, PTE Core, Basic Grammar to Advance, and PTE Booster courses. We also provide comprehensive Study Abroad Consultancy services including university selection, SOP writing, and visa guidance.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleFaq(this)">
+          How long does each course take?
+          <span class="faq-arrow" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-a">Course durations vary by program. IELTS and PTE courses typically run for 4–12 weeks depending on the student's existing level and target score. Grammar courses run for 6–8 weeks. We also offer intensive crash courses for students with upcoming exam dates. Contact us for a personalized study plan.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleFaq(this)">
+          Do you offer free trial classes or counselling?
+          <span class="faq-arrow" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-a">Yes! We offer a FREE one-on-one counselling session for all prospective students. During this session, we assess your current English level, understand your target score and goals, and recommend the most suitable course for you. Click "Get Free Counselling" anywhere on this page to book yours.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleFaq(this)">
+          What is the batch size for classes?
+          <span class="faq-arrow" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-a">We maintain small batches of 8–12 students to ensure every student receives personalized attention and direct feedback from instructors. This intimate learning environment is one of the key reasons for our 95% success rate.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleFaq(this)">
+          How do I enroll in a course?
+          <span class="faq-arrow" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-a">You can enroll by clicking any "Enroll Now" button on this page, calling us directly, messaging us on WhatsApp, or visiting our center in Sylhet. Our team will guide you through a quick enrollment process and help you choose the right batch timing.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleFaq(this)">
+          Do you provide study abroad consultancy services?
+          <span class="faq-arrow" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-a">Absolutely! Our study abroad services include university shortlisting, Statement of Purpose (SOP) writing, application processing, scholarship guidance, visa application support, and pre-departure briefings. We have helped students secure admissions in the UK, Canada, Australia, USA, and Europe.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleFaq(this)">
+          What is your success rate guarantee?
+          <span class="faq-arrow" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-a">We maintain a consistent 95% success rate in helping students achieve their target scores. While we cannot guarantee specific scores (as results depend on individual effort), we commit to providing the best possible training, materials, and support. Students who complete the full course and follow our practice schedule see dramatic improvements in their band scores.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false" onclick="toggleFaq(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleFaq(this)">
+          Can I book a mock test without enrolling in a full course?
+          <span class="faq-arrow" aria-hidden="true">▼</span>
+        </div>
+        <div class="faq-a">Yes! We offer standalone mock test sessions for both IELTS and PTE. These full-length simulated tests are conducted under real exam conditions and include detailed score analysis and feedback. Click "Book Mock Test" to schedule your session.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="sep" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div>
+        <span class="footer-logo-text">YES ACADEMY</span>
+        <p class="footer-desc">Premier English Language Proficiency Training Center and Study Abroad Consultancy in Sylhet, Bangladesh. Transforming students' futures since 2014.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+          <a href="#" class="social-btn" aria-label="Instagram">📸</a>
+          <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-btn" aria-label="WhatsApp">💬</a>
+          <a href="#" class="social-btn" aria-label="Telegram">✈️</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#hero">🏠 Home</a></li>
+          <li><a href="#about">👥 About Us</a></li>
+          <li><a href="#grammar">📘 Grammar Courses</a></li>
+          <li><a href="#ielts">🎓 IELTS Courses</a></li>
+          <li><a href="#pte">🌐 PTE Courses</a></li>
+          <li><a href="#testimonials">⭐ Student Reviews</a></li>
+          <li><a href="#contact">📞 Contact Us</a></li>
+          <li><a href="#faq">❓ FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h4>Contact Info</h4>
+        <div class="footer-addr">
+          <strong>📍 Our Location</strong>
+          Sylhet, Bangladesh<br><br>
+          <strong>📞 Phone / WhatsApp</strong>
+          +880 1XXX-XXXXXX<br><br>
+          <strong>📧 Email</strong>
+          info@yesacademy.com.bd<br><br>
+          <strong>🕐 Office Hours</strong>
+          Sat – Thu: 9 AM – 8 PM<br>
+          Friday: Closed
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; <span id="year"></span> YES ACADEMY. All rights reserved.</p>
+      <p class="footer-credit">Crafted with <span>✦</span> for YES ACADEMY, Sylhet</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     MODAL — FREE COUNSELLING
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal-counselling" role="dialog" aria-modal="true" aria-label="Free Counselling booking" onclick="if(event.target===this)closeModal('counselling')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('counselling')" aria-label="Close modal">✕</button>
+    <h3>Free Counselling</h3>
+    <p class="sub">Book your free one-on-one session with our expert advisors. No obligation, just guidance.</p>
+    <form id="form-counselling" novalidate>
+      <div class="form-group">
+        <label for="mc-name">Full Name</label>
+        <input type="text" id="mc-name" name="name" placeholder="Your full name" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="mc-phone">Mobile Number</label>
+        <input type="tel" id="mc-phone" name="phone" placeholder="+880 1XXX-XXXXXX" required autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label for="mc-email">Email Address</label>
+        <input type="email" id="mc-email" name="email" placeholder="your@email.com" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label>What are you aiming for?</label>
+        <div class="radio-group">
+          <div class="radio-opt">
+            <input type="radio" name="goal" id="goal-ielts" value="IELTS" checked>
+            <label for="goal-ielts">🎓 IELTS</label>
+          </div>
+          <div class="radio-opt">
+            <input type="radio" name="goal" id="goal-pte" value="PTE">
+            <label for="goal-pte">🌐 PTE</label>
+          </div>
+          <div class="radio-opt">
+            <input type="radio" name="goal" id="goal-abroad" value="Study Abroad">
+            <label for="goal-abroad">✈️ Study Abroad</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mc-time">Preferred Time</label>
+        <select id="mc-time" name="time">
+          <option value="" disabled selected>Select preferred time</option>
+          <option value="morning">Morning (9 AM – 12 PM)</option>
+          <option value="afternoon">Afternoon (12 PM – 4 PM)</option>
+          <option value="evening">Evening (4 PM – 8 PM)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem" id="submit-counselling">🎯 Book My Free Session</button>
+    </form>
+    <div id="modal-success" role="alert">🎉 Booking confirmed! We'll contact you within 2 hours to confirm your session time.</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     MODAL — MOCK TEST
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal-mocktest" role="dialog" aria-modal="true" aria-label="Mock Test booking" onclick="if(event.target===this)closeModal('mocktest')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('mocktest')" aria-label="Close modal">✕</button>
+    <h3>Book Mock Test</h3>
+    <p class="sub">Simulate the real exam. Get detailed score analysis and personalized feedback from our trainers.</p>
+    <form id="form-mocktest" novalidate>
+      <div class="form-group">
+        <label for="mm-name">Full Name</label>
+        <input type="text" id="mm-name" name="name" placeholder="Your full name" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="mm-phone">Mobile Number</label>
+        <input type="tel" id="mm-phone" name="phone" placeholder="+880 1XXX-XXXXXX" required autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label>Select Test Type</label>
+        <div class="radio-group">
+          <div class="radio-opt">
+            <input type="radio" name="test-type" id="tt-ielts-a" value="IELTS Academic" checked>
+            <label for="tt-ielts-a">🎓 IELTS Academic</label>
+          </div>
+          <div class="radio-opt">
+            <input type="radio" name="test-type" id="tt-ielts-gt" value="IELTS GT">
+            <label for="tt-ielts-gt">✈️ IELTS GT</label>
+          </div>
+          <div class="radio-opt">
+            <input type="radio" name="test-type" id="tt-pte" value="PTE Academic">
+            <label for="tt-pte">🌐 PTE Academic</label>
+          </div>
+          <div class="radio-opt">
+            <input type="radio" name="test-type" id="tt-pte-core" value="PTE Core">
+            <label for="tt-pte-core">🇨🇦 PTE Core</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="mm-time">Preferred Time Slot</label>
+        <select id="mm-time" name="time">
+          <option value="" disabled selected>Select preferred time</option>
+          <option value="morning">Morning (9 AM – 12 PM)</option>
+          <option value="afternoon">Afternoon (12 PM – 4 PM)</option>
+          <option value="evening">Evening (4 PM – 8 PM)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem" id="submit-mocktest">📝 Confirm Booking</button>
+    </form>
+    <div id="modal-success-mock" role="alert" style="display:none;margin-top:1rem;padding:1rem 1.5rem;border-radius:12px;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:var(--cyan);font-size:.9rem;font-weight:700;text-align:center">
+      ✅ Mock test booked! We'll confirm the exact date and time via call/WhatsApp.
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     MODAL — ENROLL
+════════════════════════════════════════════ -->
+<div class="modal-overlay" id="modal-enroll" role="dialog" aria-modal="true" aria-label="Course enrollment" onclick="if(event.target===this)closeModal('enroll')">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('enroll')" aria-label="Close modal">✕</button>
+    <h3 id="enroll-title">Enroll Now</h3>
+    <p class="sub">Complete the form below and our team will contact you within 24 hours to finalize your enrollment.</p>
+    <div class="price-badge">
+      <span class="price-label">Starting from</span>
+      <span class="price-val">BDT 3,500</span>
+    </div>
+    <form id="form-enroll" novalidate>
+      <div class="form-group">
+        <label for="me-name">Full Name</label>
+        <input type="text" id="me-name" name="name" placeholder="Your full name" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="me-phone">Mobile Number</label>
+        <input type="tel" id="me-phone" name="phone" placeholder="+880 1XXX-XXXXXX" required autocomplete="tel">
+      </div>
+      <div class="form-group">
+        <label for="me-email">Email Address</label>
+        <input type="email" id="me-email" name="email" placeholder="your@email.com" autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label>Class Format</label>
+        <div class="radio-group">
+          <div class="radio-opt">
+            <input type="radio" name="format" id="fmt-offline" value="Offline" checked>
+            <label for="fmt-offline">🏫 Offline</label>
+          </div>
+          <div class="radio-opt">
+            <input type="radio" name="format" id="fmt-online" value="Online">
+            <label for="fmt-online">💻 Online</label>
+          </div>
+          <div class="radio-opt">
+            <input type="radio" name="format" id="fmt-hybrid" value="Hybrid">
+            <label for="fmt-hybrid">🔀 Hybrid</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="me-batch">Preferred Batch Time</label>
+        <select id="me-batch" name="batch">
+          <option value="" disabled selected>Select batch time</option>
+          <option value="morning">Morning Batch (9 AM – 11 AM)</option>
+          <option value="afternoon">Afternoon Batch (2 PM – 4 PM)</option>
+          <option value="evening">Evening Batch (6 PM – 8 PM)</option>
+          <option value="weekend">Weekend Batch (Fri &amp; Sat)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:.5rem" id="submit-enroll">✨ Submit Enrollment</button>
+    </form>
+    <div id="modal-success-enroll" role="alert" style="display:none;margin-top:1rem;padding:1rem 1.5rem;border-radius:12px;background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.3);color:var(--cyan);font-size:.9rem;font-weight:700;text-align:center">
+      🎉 Enrollment submitted! We'll call you within 24 hours to confirm your batch.
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+<script>
+/* ─── LOADER ─── */
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+  }, 2000);
+});
+
+/* ─── CURRENT YEAR ─── */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ─── CUSTOM CURSOR ─── */
+const cur = document.getElementById('cur');
+const curRing = document.getElementById('curRing');
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+document.addEventListener('mousemove', e => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  cur.style.left = mouseX + 'px';
+  cur.style.top  = mouseY + 'px';
+});
+
+// Smooth ring follow
+(function animateCursor() {
+  ringX += (mouseX - ringX) * 0.18;
+  ringY += (mouseY - ringY) * 0.18;
+  curRing.style.left = ringX + 'px';
+  curRing.style.top  = ringY + 'px';
+  requestAnimationFrame(animateCursor);
+})();
+
+// Cursor states
+document.querySelectorAll('a, button, .faq-q, .carousel-card, .course-card, .about-icon-card, .why-card, .social-btn').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cur.style.transform = 'translate(-50%,-50%) scale(2)';
+    curRing.style.transform = 'translate(-50%,-50%) scale(1.5)';
+    curRing.style.borderColor = 'rgba(0,212,255,0.9)';
+  });
+  el.addEventListener('mouseleave', () => {
+    cur.style.transform = 'translate(-50%,-50%) scale(1)';
+    curRing.style.transform = 'translate(-50%,-50%) scale(1)';
+    curRing.style.borderColor = 'rgba(0,212,255,0.5)';
+  });
+});
+
+/* ─── SCROLL PROGRESS BAR ─── */
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  document.getElementById('scroll-bar').style.width = (scrolled / total * 100) + '%';
+
+  // Back-to-top visibility
+  const btn = document.getElementById('back-top');
+  if (scrolled > 400) btn.classList.add('visible');
+  else btn.classList.remove('visible');
+
+  // Navbar scrolled class
+  const nav = document.getElementById('navbar');
+  if (scrolled > 50) nav.classList.add('scrolled');
+  else nav.classList.remove('scrolled');
+
+  // Active nav link highlight
+  const sections = document.querySelectorAll('section[id]');
+  let current = '';
+  sections.forEach(s => {
+    if (scrolled >= s.offsetTop - 120) current = s.id;
+  });
+  document.querySelectorAll('.nav-links > li').forEach(li => {
+    const a = li.querySelector('a');
+    if (a && a.getAttribute('href') === '#' + current) li.classList.add('active');
+    else li.classList.remove('active');
+  });
+});
+
+/* ─── REVEAL ON SCROLL ─── */
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+  revealObserver.observe(el);
+});
+
+/* ─── MOBILE NAV ─── */
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobileNav');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.toggle('open');
+  hamburger.classList.toggle('open', isOpen);
+  hamburger.setAttribute('aria-expanded', isOpen);
+});
+
+function closeMobile() {
+  mobileNav.classList.remove('open');
+  hamburger.classList.remove('open');
+  hamburger.setAttribute('aria-expanded', 'false');
+}
+
+// Close mobile nav on outside click
+document.addEventListener('click', e => {
+  if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
+    closeMobile();
+  }
+});
+
+/* ─── RIPPLE EFFECT ─── */
+document.querySelectorAll('.btn').forEach(btn => {
+  btn.addEventListener('click', function(e) {
+    const r = document.createElement('span');
+    r.className = 'ripple';
+    const rect = this.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    r.style.width  = r.style.height = size + 'px';
+    r.style.left   = (e.clientX - rect.left - size / 2) + 'px';
+    r.style.top    = (e.clientY - rect.top  - size / 2) + 'px';
+    this.appendChild(r);
+    setTimeout(() => r.remove(), 700);
+  });
+});
+
+/* ─── FAQ ACCORDION ─── */
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+  });
+  // Open clicked (if was closed)
+  if (!isOpen) {
+    item.classList.add('open');
+    el.setAttribute('aria-expanded', 'true');
+  }
+}
+
+/* ─── MODAL SYSTEM ─── */
+function openModal(type) {
+  document.getElementById('modal-' + type).classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(type) {
+  document.getElementById('modal-' + type).classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function openEnroll(courseName) {
+  document.getElementById('enroll-title').textContent = 'Enroll: ' + courseName;
+  // Reset success state
+  document.getElementById('modal-success-enroll').style.display = 'none';
+  document.getElementById('form-enroll').style.display = 'block';
+  openModal('enroll');
+}
+
+// Close modals on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.active').forEach(m => {
+      m.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+});
+
+/* ─── FORM SUBMISSIONS (client-side demo) ─── */
+function handleFormSubmit(formId, successId, submitId) {
+  const form = document.getElementById(formId);
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById(submitId);
+    const original = btn.innerHTML;
+
+    // Validate required fields
+    const required = form.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(f => {
+      f.style.borderColor = '';
+      if (!f.value.trim()) {
+        f.style.borderColor = 'var(--red-light)';
+        valid = false;
+      }
+    });
+    if (!valid) return;
+
+    // Loading state
+    btn.innerHTML = '⏳ Sending...';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      form.style.display = 'none';
+      const success = document.getElementById(successId);
+      if (success) success.style.display = 'block';
+      btn.innerHTML = original;
+      btn.disabled = false;
+    }, 1500);
+  });
+}
+
+handleFormSubmit('form-counselling', 'modal-success', 'submit-counselling');
+handleFormSubmit('form-mocktest', 'modal-success-mock', 'submit-mocktest');
+handleFormSubmit('form-enroll', 'modal-success-enroll', 'submit-enroll');
+
+// Contact form
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('contact-submit');
+    const required = this.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(f => {
+      f.style.borderColor = '';
+      if (!f.value.trim()) {
+        f.style.borderColor = 'var(--red-light)';
+        valid = false;
+      }
+    });
+    if (!valid) return;
+    btn.innerHTML = '⏳ Sending...';
+    btn.disabled = true;
+    setTimeout(() => {
+      document.getElementById('form-success').style.display = 'block';
+      btn.innerHTML = '🚀 Send Message';
+      btn.disabled = false;
+      this.reset();
+    }, 1500);
+  });
+}
+</script>
+</body>
+</html>
